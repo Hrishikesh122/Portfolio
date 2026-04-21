@@ -94,3 +94,16 @@ document.addEventListener("mousemove", (e) => {
     glow.style.top = e.clientY + "px";
   }
 });
+const hoverTargets = document.querySelectorAll("a, .feat-card, .hud-panel");
+
+hoverTargets.forEach(el => {
+  el.addEventListener("mouseenter", () => {
+    glow.style.transform = "translate(-50%, -50%) scale(1.8)";
+    glow.style.opacity = "0.6";
+  });
+
+  el.addEventListener("mouseleave", () => {
+    glow.style.transform = "translate(-50%, -50%) scale(1)";
+    glow.style.opacity = "1";
+  });
+});
