@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HH // CONTACT</title>
+  <link rel="stylesheet" href="../css/hud.css"/>
+  <link rel="stylesheet" href="../css/glitch.css"/>
+  <link rel="stylesheet" href="../css/subpage.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="scanlines"></div><div class="vignette"></div><div class="noise"></div>
+
+<nav class="hud-nav">
+  <div class="hud-nav__left">
+    <a href="../index.html" class="hud-nav__logo">HH<span class="accent">.</span>SYS</a>
+    <span class="hud-nav__status"><span class="pulse-dot"></span> ONLINE</span>
+  </div>
+  <ul class="hud-nav__links">
+    <li><a href="../index.html"><span class="nav-num">00</span>HOME</a></li>
+    <li><a href="about.html"><span class="nav-num">01</span>ABOUT</a></li>
+    <li><a href="projects.html"><span class="nav-num">02</span>PROJECTS</a></li>
+    <li><a href="skills.html"><span class="nav-num">03</span>SKILLS</a></li>
+    <li><a href="contact.html" class="active"><span class="nav-num">04</span>CONTACT</a></li>
+  </ul>
+  <div class="hud-nav__right"><span class="hud-clock" id="hud-clock">00:00:00</span></div>
+</nav>
+
+<div class="subpage-hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="subpage-hero__content">
+    <p class="sub-eyebrow"><span class="accent">// </span>MODULE 04</p>
+    <h1 class="sub-title glitch-text" data-text="CONTACT">CONTACT</h1>
+    <p class="sub-desc">Open a secure channel. Encrypted transmission ready.</p>
+  </div>
+  <div class="subpage-hero__hud-bar">
+    <span>ENCRYPTION: AES-256</span><span class="accent">◈</span>
+    <span>CHANNEL: SECURE</span><span class="accent">◈</span>
+    <span>RESPONSE: &lt;24H</span>
+  </div>
+</div>
+
+<section class="subpage-content">
+  <div class="contact-grid">
+
+    <div class="contact-channels">
+      <div class="hud-panel__label" style="font-family:var(--font-hud);font-size:0.5rem;font-weight:700;color:var(--accent);letter-spacing:0.2em;margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">// COMMUNICATION CHANNELS</div>
+
+      <a href="mailto:hrishikesh@example.com" class="channel-item">
+        <div class="channel-icon">[✉]</div>
+        <div class="channel-body">
+          <span class="channel-label">EMAIL</span>
+          <span class="channel-val">hrishikesh@example.com</span>
+          <span class="channel-note">Primary contact — replace with your real email</span>
+        </div>
+        <span class="channel-arrow">→</span>
+      </a>
+
+      <a href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" target="_blank" class="channel-item">
+        <div class="channel-icon">[in]</div>
+        <div class="channel-body">
+          <span class="channel-label">LINKEDIN</span>
+          <span class="channel-val">hrishikesh-harnoor</span>
+          <span class="channel-note">Professional network</span>
+        </div>
+        <span class="channel-arrow">→</span>
+      </a>
+
+      <a href="https://github.com/Hrishikesh122" target="_blank" class="channel-item">
+        <div class="channel-icon">[gh]</div>
+        <div class="channel-body">
+          <span class="channel-label">GITHUB</span>
+          <span class="channel-val">Hrishikesh122</span>
+          <span class="channel-note">Source code &amp; projects</span>
+        </div>
+        <span class="channel-arrow">→</span>
+      </a>
+    </div>
+
+    <div class="contact-form-panel">
+      <div class="hud-panel__label" style="font-family:var(--font-hud);font-size:0.5rem;font-weight:700;color:var(--accent);letter-spacing:0.2em;margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">// TRANSMIT MESSAGE</div>
+      <div class="hud-form">
+        <div class="hf-group">
+          <label class="hf-label">SENDER_ID</label>
+          <input class="hf-input" type="text" placeholder="your name"/>
+        </div>
+        <div class="hf-group">
+          <label class="hf-label">RETURN_ADDRESS</label>
+          <input class="hf-input" type="email" placeholder="your@email.com"/>
+        </div>
+        <div class="hf-group">
+          <label class="hf-label">MESSAGE_PAYLOAD</label>
+          <textarea class="hf-input hf-textarea" placeholder="Describe your transmission..."></textarea>
+        </div>
+        <button class="hud-btn hud-btn--full" onclick="handleSend(this)">TRANSMIT <span>→</span></button>
+        <p class="hf-note" id="hf-note"></p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="hud-footer">
+  <span>HH.SYS // v2.0.25</span><span class="accent">▮</span><span>HRISHIKESH HARNOOR</span>
+</footer>
+<script src="../js/canvas.js"></script>
+<script src="../js/hud.js"></script>
+<script>
+function handleSend(btn) {
+  const note = document.getElementById('hf-note');
+  btn.textContent = 'TRANSMITTING...';
+  setTimeout(() => {
+    btn.innerHTML = 'TRANSMITTED ✓';
+    btn.style.color = 'var(--accent2)';
+    btn.style.borderColor = 'var(--accent2)';
+    note.textContent = '> MESSAGE QUEUED. RESPONSE WITHIN 24H.';
+    note.style.color = 'var(--accent2)';
+  }, 1200);
+}
+</script>
+</body>
+</html>

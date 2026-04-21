@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HH // ABOUT</title>
+  <link rel="stylesheet" href="../css/hud.css"/>
+  <link rel="stylesheet" href="../css/glitch.css"/>
+  <link rel="stylesheet" href="../css/subpage.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="scanlines"></div><div class="vignette"></div><div class="noise"></div>
+
+<nav class="hud-nav">
+  <div class="hud-nav__left">
+    <a href="../index.html" class="hud-nav__logo">HH<span class="accent">.</span>SYS</a>
+    <span class="hud-nav__status"><span class="pulse-dot"></span> ONLINE</span>
+  </div>
+  <ul class="hud-nav__links">
+    <li><a href="../index.html"><span class="nav-num">00</span>HOME</a></li>
+    <li><a href="about.html" class="active"><span class="nav-num">01</span>ABOUT</a></li>
+    <li><a href="projects.html"><span class="nav-num">02</span>PROJECTS</a></li>
+    <li><a href="skills.html"><span class="nav-num">03</span>SKILLS</a></li>
+    <li><a href="contact.html"><span class="nav-num">04</span>CONTACT</a></li>
+  </ul>
+  <div class="hud-nav__right"><span class="hud-clock" id="hud-clock">00:00:00</span></div>
+</nav>
+
+<div class="subpage-hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="subpage-hero__content">
+    <p class="sub-eyebrow"><span class="accent">// </span>MODULE 01</p>
+    <h1 class="sub-title glitch-text" data-text="ABOUT">ABOUT</h1>
+    <p class="sub-desc">Operator file. Clearance level: public.</p>
+  </div>
+  <div class="subpage-hero__hud-bar">
+    <span>OPERATOR: HRISHIKESH_HARNOOR</span>
+    <span class="accent">◈</span>
+    <span>LOCATION: INDIA</span>
+    <span class="accent">◈</span>
+    <span>STATUS: ACTIVE</span>
+  </div>
+</div>
+
+<section class="subpage-content">
+  <div class="about-grid">
+    <div class="about-bio-panel">
+      <div class="hud-panel-sub">
+        <div class="hud-corner hud-corner--tl"></div>
+        <div class="hud-panel__label">// OPERATOR BIO</div>
+        <p class="about-text">
+          I'm Hrishikesh Harnoor — a designer and developer operating at the intersection of <span class="accent-text">quantum computing</span>, <span class="accent-text">cybersecurity</span>, and <span class="accent-text">embedded systems</span>.
+        </p>
+        <p class="about-text">
+          My work bridges the physical and digital: from writing firmware for microcontrollers to building quantum ML pipelines that run anomaly detection on edge hardware. I believe the future of computing isn't just in the cloud — it's in the silicon, the circuit, and the quantum state.
+        </p>
+        <p class="about-text">
+          When I'm not building things, I'm reverse engineering them to understand how they break.
+        </p>
+      </div>
+    </div>
+
+    <div class="about-timeline-panel">
+      <div class="hud-panel__label" style="font-family:var(--font-hud);font-size:0.5rem;font-weight:700;color:var(--accent);letter-spacing:0.2em;margin-bottom:1.5rem;">// TIMELINE</div>
+      <div class="hud-timeline">
+        <div class="ht-item">
+          <div class="ht-dot"></div>
+          <div class="ht-content">
+            <span class="ht-date">2024 — PRESENT</span>
+            <h4>B.Tech — ECE / CS</h4>
+            <p>Active research in QML, embedded systems, and network security. CTF participation.</p>
+          </div>
+        </div>
+        <div class="ht-item">
+          <div class="ht-dot"></div>
+          <div class="ht-content">
+            <span class="ht-date">2024</span>
+            <h4>QML Anomaly Detection</h4>
+            <p>Built variational quantum circuit models for edge-based network intrusion detection.</p>
+          </div>
+        </div>
+        <div class="ht-item">
+          <div class="ht-dot"></div>
+          <div class="ht-content">
+            <span class="ht-date">2023</span>
+            <h4>Digital Twin + Edge AI</h4>
+            <p>Developed ESP32-based IoT firmware with real-time digital twin mirroring.</p>
+          </div>
+        </div>
+        <div class="ht-item">
+          <div class="ht-dot"></div>
+          <div class="ht-content">
+            <span class="ht-date">2023</span>
+            <h4>Jarvis AI Assistant</h4>
+            <p>Voice-controlled AI with NLP task automation running fully offline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="hud-footer">
+  <span>HH.SYS // v2.0.25</span><span class="accent">▮</span><span>HRISHIKESH HARNOOR</span>
+</footer>
+<script src="../js/canvas.js"></script>
+<script src="../js/hud.js"></script>
+</body>
+</html>

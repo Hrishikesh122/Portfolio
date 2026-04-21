@@ -1,0 +1,89 @@
+/* ===== GLITCH TEXT ===== */
+.glitch-text{
+  position:relative;
+  animation:glitch-main 5s ease-in-out infinite;
+}
+.glitch-text::before,
+.glitch-text::after{
+  content:attr(data-text);
+  position:absolute;top:0;left:0;
+  width:100%;height:100%;
+  font-family:inherit;font-size:inherit;font-weight:inherit;
+  letter-spacing:inherit;
+}
+.glitch-text::before{
+  color:var(--accent3);
+  clip-path:polygon(0 20%,100% 20%,100% 40%,0 40%);
+  animation:glitch-before 5s ease-in-out infinite;
+  text-shadow:2px 0 var(--accent3);
+}
+.glitch-text::after{
+  color:var(--accent2);
+  clip-path:polygon(0 60%,100% 60%,100% 80%,0 80%);
+  animation:glitch-after 5s ease-in-out infinite;
+  text-shadow:-2px 0 var(--accent2);
+}
+
+@keyframes glitch-main{
+  0%,85%,100%{transform:none;opacity:1}
+  86%{transform:skew(-3deg);opacity:0.9}
+  87%{transform:skew(0);opacity:1}
+  88%{transform:translate(-2px,0) skew(2deg);opacity:0.8}
+  89%{transform:none;opacity:1}
+  95%{transform:skew(1deg);opacity:0.95}
+}
+@keyframes glitch-before{
+  0%,85%,100%{transform:none;opacity:0}
+  86%{transform:translate(-3px,0);opacity:0.8}
+  87%{transform:translate(2px,0);opacity:0.6}
+  88%{transform:none;opacity:0}
+  92%{transform:translate(-4px,0);opacity:0.5}
+  93%{transform:none;opacity:0}
+}
+@keyframes glitch-after{
+  0%,85%,100%{transform:none;opacity:0}
+  86%{transform:translate(3px,0);opacity:0.6}
+  87%{transform:translate(-1px,0);opacity:0.8}
+  88%{transform:none;opacity:0}
+  90%{transform:translate(5px,0);opacity:0.4}
+  91%{transform:none;opacity:0}
+}
+
+/* ===== PAGE TRANSITION ===== */
+.page-transition{
+  position:fixed;inset:0;z-index:9000;
+  background:var(--bg);
+  transform:scaleY(0);transform-origin:top;
+  pointer-events:none;
+}
+.page-transition.entering{
+  animation:page-in 0.4s ease forwards;
+}
+.page-transition.leaving{
+  animation:page-out 0.4s ease forwards;
+}
+@keyframes page-in{
+  from{transform:scaleY(1)}
+  to{transform:scaleY(0)}
+}
+@keyframes page-out{
+  from{transform:scaleY(0)}
+  to{transform:scaleY(1)}
+}
+
+/* ===== DATA STREAM (decorative) ===== */
+.data-stream{
+  position:fixed;right:1rem;top:50%;transform:translateY(-50%);
+  z-index:50;pointer-events:none;
+  display:flex;flex-direction:column;gap:2px;
+}
+.data-stream-char{
+  font-family:var(--font-mono);font-size:0.55rem;
+  color:var(--text-muted);
+  animation:stream-fade 2s linear infinite;
+  animation-delay:calc(var(--i)*0.15s);
+}
+@keyframes stream-fade{
+  0%,100%{opacity:0.2}
+  50%{opacity:0.7}
+}

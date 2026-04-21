@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HH // PROJECTS</title>
+  <link rel="stylesheet" href="../css/hud.css"/>
+  <link rel="stylesheet" href="../css/glitch.css"/>
+  <link rel="stylesheet" href="../css/subpage.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+<div class="scanlines"></div>
+<div class="vignette"></div>
+<div class="noise"></div>
+
+<nav class="hud-nav" id="hud-nav">
+  <div class="hud-nav__left">
+    <a href="../index.html" class="hud-nav__logo">HH<span class="accent">.</span>SYS</a>
+    <span class="hud-nav__status"><span class="pulse-dot"></span> ONLINE</span>
+  </div>
+  <ul class="hud-nav__links">
+    <li><a href="../index.html"><span class="nav-num">00</span>HOME</a></li>
+    <li><a href="about.html"><span class="nav-num">01</span>ABOUT</a></li>
+    <li><a href="projects.html" class="active"><span class="nav-num">02</span>PROJECTS</a></li>
+    <li><a href="skills.html"><span class="nav-num">03</span>SKILLS</a></li>
+    <li><a href="contact.html"><span class="nav-num">04</span>CONTACT</a></li>
+  </ul>
+  <div class="hud-nav__right"><span class="hud-clock" id="hud-clock">00:00:00</span></div>
+</nav>
+
+<div class="subpage-hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="subpage-hero__content">
+    <p class="sub-eyebrow"><span class="accent">// </span>MODULE 02</p>
+    <h1 class="sub-title glitch-text" data-text="PROJECTS">PROJECTS</h1>
+    <p class="sub-desc">Classified operations. Select a file to access.</p>
+  </div>
+  <div class="subpage-hero__hud-bar">
+    <span>TOTAL_FILES: 03</span>
+    <span class="accent">◈</span>
+    <span>STATUS: ACTIVE</span>
+    <span class="accent">◈</span>
+    <span>CLEARANCE: GRANTED</span>
+  </div>
+</div>
+
+<section class="subpage-content">
+  <div class="proj-list">
+
+    <div class="proj-file">
+      <div class="proj-file__header">
+        <div class="proj-file__id">FILE_01 // QML_ANOMALY</div>
+        <span class="proj-file__status status--active">ACTIVE</span>
+      </div>
+      <div class="proj-file__body">
+        <h2>QML Anomaly Detection</h2>
+        <p>Quantum Machine Learning pipeline leveraging variational quantum circuits (VQC) for anomaly detection in network traffic. Integrates Qiskit-based quantum preprocessing with classical ML for edge-deployable intrusion detection systems.</p>
+        <div class="proj-meta-grid">
+          <div class="pmeta"><span class="pmeta-k">STACK</span><span class="pmeta-v">Qiskit · Python · Scikit-learn · NumPy</span></div>
+          <div class="pmeta"><span class="pmeta-k">DOMAIN</span><span class="pmeta-v">Quantum ML · Cybersecurity</span></div>
+          <div class="pmeta"><span class="pmeta-k">STATUS</span><span class="pmeta-v accent">In Development</span></div>
+        </div>
+        <div class="proj-file__actions">
+          <a href="https://github.com/Hrishikesh122" target="_blank" class="hud-btn">GITHUB <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-file">
+      <div class="proj-file__header">
+        <div class="proj-file__id">FILE_02 // DIGITAL_TWIN</div>
+        <span class="proj-file__status status--active">ACTIVE</span>
+      </div>
+      <div class="proj-file__body">
+        <h2>Digital Twin-Enhanced Edge Model</h2>
+        <p>Real-time digital twin framework that mirrors physical IoT infrastructure for predictive maintenance. Runs inference at the edge via ESP32 + FreeRTOS without cloud round-trips, enabling sub-10ms anomaly response.</p>
+        <div class="proj-meta-grid">
+          <div class="pmeta"><span class="pmeta-k">STACK</span><span class="pmeta-v">C/C++ · ESP32 · FreeRTOS · MQTT · Python</span></div>
+          <div class="pmeta"><span class="pmeta-k">DOMAIN</span><span class="pmeta-v">Embedded · IoT · Edge AI</span></div>
+          <div class="pmeta"><span class="pmeta-k">STATUS</span><span class="pmeta-v accent">Prototype</span></div>
+        </div>
+        <div class="proj-file__actions">
+          <a href="https://github.com/Hrishikesh122" target="_blank" class="hud-btn">GITHUB <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="proj-file">
+      <div class="proj-file__header">
+        <div class="proj-file__id">FILE_03 // JARVIS_AI</div>
+        <span class="proj-file__status status--online">ONLINE</span>
+      </div>
+      <div class="proj-file__body">
+        <h2>Jarvis AI</h2>
+        <p>A voice-driven personal AI assistant with natural language command parsing, task automation, and system control. Inspired by ambient intelligent systems — designed to run locally with offline NLP support.</p>
+        <div class="proj-meta-grid">
+          <div class="pmeta"><span class="pmeta-k">STACK</span><span class="pmeta-v">Python · SpeechRecognition · pyttsx3 · NLP</span></div>
+          <div class="pmeta"><span class="pmeta-k">DOMAIN</span><span class="pmeta-v">AI · Voice · Automation</span></div>
+          <div class="pmeta"><span class="pmeta-k">STATUS</span><span class="pmeta-v accent">Operational</span></div>
+        </div>
+        <div class="proj-file__actions">
+          <a href="https://github.com/Hrishikesh122" target="_blank" class="hud-btn">GITHUB <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer class="hud-footer">
+  <span>HH.SYS // v2.0.25</span><span class="accent">▮</span><span>HRISHIKESH HARNOOR</span>
+</footer>
+
+<script src="../js/canvas.js"></script>
+<script src="../js/hud.js"></script>
+</body>
+</html>

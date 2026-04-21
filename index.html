@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HH // SYSTEM ONLINE</title>
+  <link rel="stylesheet" href="css/hud.css"/>
+  <link rel="stylesheet" href="css/glitch.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="booting">
+
+<!-- BOOT SCREEN -->
+<div id="boot-screen">
+  <div class="boot-inner">
+    <div class="boot-logo">HH<span class="accent">_</span></div>
+    <div class="boot-bar"><div class="boot-bar__fill" id="boot-fill"></div></div>
+    <div class="boot-log" id="boot-log"></div>
+  </div>
+</div>
+
+<!-- SCANLINE OVERLAY -->
+<div class="scanlines"></div>
+<div class="vignette"></div>
+<div class="noise"></div>
+
+<!-- NAV HUD -->
+<nav class="hud-nav" id="hud-nav">
+  <div class="hud-nav__left">
+    <span class="hud-nav__logo">HH<span class="accent">.</span>SYS</span>
+    <span class="hud-nav__status"><span class="pulse-dot"></span> ONLINE</span>
+  </div>
+  <ul class="hud-nav__links">
+    <li><a href="index.html" class="active"><span class="nav-num">00</span>HOME</a></li>
+    <li><a href="pages/about.html"><span class="nav-num">01</span>ABOUT</a></li>
+    <li><a href="pages/projects.html"><span class="nav-num">02</span>PROJECTS</a></li>
+    <li><a href="pages/skills.html"><span class="nav-num">03</span>SKILLS</a></li>
+    <li><a href="pages/contact.html"><span class="nav-num">04</span>CONTACT</a></li>
+  </ul>
+  <div class="hud-nav__right">
+    <span class="hud-clock" id="hud-clock">00:00:00</span>
+  </div>
+</nav>
+
+<!-- MAIN HERO -->
+<section class="hero-hud">
+  <canvas id="hero-canvas"></canvas>
+
+  <!-- LEFT PANEL -->
+  <div class="hud-panel hud-panel--left">
+    <div class="hud-corner hud-corner--tl"></div>
+    <div class="hud-panel__label">SYS // IDENTITY</div>
+    <div class="stat-row"><span class="stat-key">OPERATOR</span><span class="stat-val">HRISHIKESH HARNOOR</span></div>
+    <div class="stat-row"><span class="stat-key">ROLE</span><span class="stat-val">DESIGNER + DEV</span></div>
+    <div class="stat-row"><span class="stat-key">DOMAIN</span><span class="stat-val">QUANTUM / CYBER / EMBED</span></div>
+    <div class="stat-row"><span class="stat-key">STATUS</span><span class="stat-val accent">ACTIVE ▮</span></div>
+    <div class="stat-row"><span class="stat-key">THREAT LVL</span><span class="stat-val">CLASSIFIED</span></div>
+    <div class="hud-divider"></div>
+    <div class="hud-panel__label">COMMS // LINK</div>
+    <div class="stat-row"><a href="https://github.com/Hrishikesh122" target="_blank" class="stat-link">[ GITHUB ]</a></div>
+    <div class="stat-row"><a href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" target="_blank" class="stat-link">[ LINKEDIN ]</a></div>
+  </div>
+
+  <!-- CENTER — HOLOGRAM PHOTO + RINGS -->
+  <div class="hero-center">
+    <div class="hologram-wrap" id="hologram">
+      <div class="radar-ring radar-ring--1"></div>
+      <div class="radar-ring radar-ring--2"></div>
+      <div class="radar-ring radar-ring--3"></div>
+      <div class="radar-sweep"></div>
+
+      <div class="photo-container">
+        <div class="photo-frame">
+          <!-- Replace src with your photo -->
+          <div class="photo-placeholder">
+            <span class="photo-initials">HH</span>
+            <div class="hologram-bars"></div>
+          </div>
+          <div class="scanline-over"></div>
+          <div class="glitch-slice s1"></div>
+          <div class="glitch-slice s2"></div>
+          <div class="duotone-overlay"></div>
+        </div>
+      </div>
+
+      <div class="hud-ring-text">
+        <svg viewBox="0 0 300 300" class="ring-svg">
+          <defs>
+            <path id="circle-path" d="M 150,150 m -120,0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0"/>
+          </defs>
+          <text class="ring-text-svg">
+            <textPath href="#circle-path">QUANTUM ◈ CYBERSECURITY ◈ EMBEDDED SYSTEMS ◈ AI ◈ </textPath>
+          </text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="hero-title-wrap">
+      <p class="hero-eyebrow"><span class="accent">// </span>INITIALIZING PROFILE</p>
+      <h1 class="hero-title glitch-text" data-text="HRISHIKESH">HRISHIKESH</h1>
+      <h1 class="hero-title hero-title--outline glitch-text" data-text="HARNOOR">HARNOOR</h1>
+      <p class="hero-tagline typewriter" id="typewriter"></p>
+    </div>
+  </div>
+
+  <!-- RIGHT PANEL -->
+  <div class="hud-panel hud-panel--right">
+    <div class="hud-corner hud-corner--tr"></div>
+    <div class="hud-panel__label">SYS // METRICS</div>
+    <div class="gauge-row">
+      <span class="gauge-label">QUANTUM</span>
+      <div class="gauge-bar"><div class="gauge-fill" style="--w:88%"></div></div>
+      <span class="gauge-pct">88%</span>
+    </div>
+    <div class="gauge-row">
+      <span class="gauge-label">SECURITY</span>
+      <div class="gauge-bar"><div class="gauge-fill" style="--w:92%"></div></div>
+      <span class="gauge-pct">92%</span>
+    </div>
+    <div class="gauge-row">
+      <span class="gauge-label">EMBEDDED</span>
+      <div class="gauge-bar"><div class="gauge-fill" style="--w:85%"></div></div>
+      <span class="gauge-pct">85%</span>
+    </div>
+    <div class="gauge-row">
+      <span class="gauge-label">ML / AI</span>
+      <div class="gauge-bar"><div class="gauge-fill" style="--w:80%"></div></div>
+      <span class="gauge-pct">80%</span>
+    </div>
+    <div class="hud-divider"></div>
+    <div class="hud-panel__label">ACTIVE // PROJECTS</div>
+    <div class="proj-item"><span class="proj-dot"></span>QML Anomaly Detection</div>
+    <div class="proj-item"><span class="proj-dot"></span>Digital Twin Edge Model</div>
+    <div class="proj-item"><span class="proj-dot"></span>Jarvis AI</div>
+  </div>
+
+  <!-- BOTTOM HUD BAR -->
+  <div class="hud-bottom">
+    <span class="hud-coord" id="coord-x">X: 0000</span>
+    <a href="pages/projects.html" class="hud-cta">ENTER SYSTEM <span class="accent">→</span></a>
+    <span class="hud-coord" id="coord-y">Y: 0000</span>
+  </div>
+</section>
+
+<!-- FEATURED SECTION -->
+<section class="featured-section">
+  <div class="section-hud-header">
+    <div class="shh-line"></div>
+    <span class="shh-label">// FEATURED PROJECTS</span>
+    <div class="shh-line"></div>
+  </div>
+  <div class="feat-grid">
+    <a href="pages/projects.html" class="feat-card">
+      <div class="feat-card__num">01</div>
+      <div class="feat-card__glow"></div>
+      <div class="feat-card__top">
+        <span class="feat-tag">QUANTUM ML</span>
+        <span class="feat-arrow">↗</span>
+      </div>
+      <h3>QML Anomaly<br/>Detection</h3>
+      <p>Variational quantum circuits for network intrusion detection at the edge.</p>
+      <div class="feat-card__bar"></div>
+    </a>
+    <a href="pages/projects.html" class="feat-card">
+      <div class="feat-card__num">02</div>
+      <div class="feat-card__glow"></div>
+      <div class="feat-card__top">
+        <span class="feat-tag">EDGE AI</span>
+        <span class="feat-arrow">↗</span>
+      </div>
+      <h3>Digital Twin<br/>Edge Model</h3>
+      <p>Real-time IoT mirroring for predictive maintenance without cloud latency.</p>
+      <div class="feat-card__bar"></div>
+    </a>
+    <a href="pages/projects.html" class="feat-card">
+      <div class="feat-card__num">03</div>
+      <div class="feat-card__glow"></div>
+      <div class="feat-card__top">
+        <span class="feat-tag">AI ASSISTANT</span>
+        <span class="feat-arrow">↗</span>
+      </div>
+      <h3>Jarvis AI</h3>
+      <p>Voice-driven personal AI with NLP command parsing and task automation.</p>
+      <div class="feat-card__bar"></div>
+    </a>
+  </div>
+</section>
+
+<footer class="hud-footer">
+  <span>HH.SYS // v2.0.25</span>
+  <span class="accent">▮</span>
+  <span>HRISHIKESH HARNOOR</span>
+</footer>
+
+<script src="js/boot.js"></script>
+<script src="js/canvas.js"></script>
+<script src="js/hud.js"></script>
+</body>
+</html>
