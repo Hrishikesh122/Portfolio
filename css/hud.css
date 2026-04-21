@@ -678,3 +678,26 @@ if (hero) {
       `translate(${x * -0.5}px, ${y * -0.5}px)`;
   });
 }
+/* === CARD HOVER === */
+.feat-card {
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.feat-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 0 25px rgba(0,255,255,0.4);
+}
+
+/* === GLITCH HOVER === */
+.glitch-hover:hover {
+  animation: glitch 0.3s infinite;
+}
+
+@keyframes glitch {
+  0% { transform: translate(0); }
+  20% { transform: translate(-2px,2px); }
+  40% { transform: translate(2px,-2px); }
+  60% { transform: translate(-1px,1px); }
+  80% { transform: translate(1px,-1px); }
+  100% { transform: translate(0); }
+}
