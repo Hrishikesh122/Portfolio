@@ -86,3 +86,11 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.feat-card, .stat-row, .gauge-row, .proj-item').forEach(el => io.observe(el));
+const glow = document.getElementById("cursor-glow");
+
+document.addEventListener("mousemove", (e) => {
+  if (glow) {
+    glow.style.left = e.clientX + "px";
+    glow.style.top = e.clientY + "px";
+  }
+});

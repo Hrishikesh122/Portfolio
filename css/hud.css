@@ -701,3 +701,16 @@ if (hero) {
   80% { transform: translate(1px,-1px); }
   100% { transform: translate(0); }
 }
+/* === CURSOR GLOW === */
+.cursor-glow {
+  position: fixed;
+  width: 200px;
+  height: 200px;
+  pointer-events: none;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0,255,255,0.25) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  mix-blend-mode: screen;
+  transition: transform 0.05s linear;
+}
