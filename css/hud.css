@@ -714,3 +714,12 @@ if (hero) {
   mix-blend-mode: screen;
   transition: transform 0.05s linear;
 }
+/* === PAGE TRANSITION === */
+body {
+  opacity: 0;
+  transition: opacity 0.6s ease;
+}
+
+body.loaded {
+  opacity: 1;
+}
