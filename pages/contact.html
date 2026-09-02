@@ -1,123 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HH // CONTACT</title>
-  <link rel="stylesheet" href="../css/hud.css"/>
-  <link rel="stylesheet" href="../css/glitch.css"/>
-  <link rel="stylesheet" href="../css/subpage.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Contact - Hrishikesh Harnoor</title>
+<meta name="description" content="Get in touch with Hrishikesh Harnoor about internships, research collaboration or security work. Email, LinkedIn, GitHub and a contact form.">
+<link rel="canonical" href="https://hrishikesh122.github.io/Portfolio/pages/contact.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hrishikesh122.github.io/Portfolio/pages/contact.html">
+<meta property="og:title" content="Contact - Hrishikesh Harnoor">
+<meta property="og:description" content="Internships, research collaboration and security work.">
+<meta property="og:image" content="https://hrishikesh122.github.io/Portfolio/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hrishikesh122.github.io/Portfolio/assets/og.png">
+
+<meta name="theme-color" content="#070b0e">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/core.css">
+<link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
-<div class="scanlines"></div><div class="vignette"></div><div class="noise"></div>
 
-<nav class="hud-nav">
-  <div class="hud-nav__left">
-    <a href="../index.html" class="hud-nav__logo">HH<span class="accent">.</span>SYS</a>
-    <span class="hud-nav__status"><span class="pulse-dot"></span> ONLINE</span>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="../index.html">HH<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span class="sr-only">Menu</span>
+      <span class="nav__toggle-bars" aria-hidden="true"><i></i></span>
+    </button>
   </div>
-  <ul class="hud-nav__links">
-    <li><a href="../index.html"><span class="nav-num">00</span>HOME</a></li>
-    <li><a href="about.html"><span class="nav-num">01</span>ABOUT</a></li>
-    <li><a href="projects.html"><span class="nav-num">02</span>PROJECTS</a></li>
-    <li><a href="skills.html"><span class="nav-num">03</span>SKILLS</a></li>
-    <li><a href="contact.html" class="active"><span class="nav-num">04</span>CONTACT</a></li>
-  </ul>
-  <div class="hud-nav__right"><span class="hud-clock" id="hud-clock">00:00:00</span></div>
-</nav>
+</header>
 
-<div class="subpage-hero">
-  <canvas id="hero-canvas"></canvas>
-  <div class="subpage-hero__content">
-    <p class="sub-eyebrow"><span class="accent">// </span>MODULE 04</p>
-    <h1 class="sub-title glitch-text" data-text="CONTACT">CONTACT</h1>
-    <p class="sub-desc">Open a secure channel. Encrypted transmission ready.</p>
-  </div>
-  <div class="subpage-hero__hud-bar">
-    <span>ENCRYPTION: AES-256</span><span class="accent">◈</span>
-    <span>CHANNEL: SECURE</span><span class="accent">◈</span>
-    <span>RESPONSE: &lt;24H</span>
-  </div>
-</div>
+<main id="main">
 
-<section class="subpage-content">
-  <div class="contact-grid">
-
-    <div class="contact-channels">
-      <div class="hud-panel__label" style="font-family:var(--font-hud);font-size:0.5rem;font-weight:700;color:var(--accent);letter-spacing:0.2em;margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">// COMMUNICATION CHANNELS</div>
-
-      <a href="mailto:hrishikesh@example.com" class="channel-item">
-        <div class="channel-icon">[✉]</div>
-        <div class="channel-body">
-          <span class="channel-label">EMAIL</span>
-          <span class="channel-val">hrishikesh@example.com</span>
-          <span class="channel-note">Primary contact — replace with your real email</span>
-        </div>
-        <span class="channel-arrow">→</span>
-      </a>
-
-      <a href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" target="_blank" class="channel-item">
-        <div class="channel-icon">[in]</div>
-        <div class="channel-body">
-          <span class="channel-label">LINKEDIN</span>
-          <span class="channel-val">hrishikesh-harnoor</span>
-          <span class="channel-note">Professional network</span>
-        </div>
-        <span class="channel-arrow">→</span>
-      </a>
-
-      <a href="https://github.com/Hrishikesh122" target="_blank" class="channel-item">
-        <div class="channel-icon">[gh]</div>
-        <div class="channel-body">
-          <span class="channel-label">GITHUB</span>
-          <span class="channel-val">Hrishikesh122</span>
-          <span class="channel-note">Source code &amp; projects</span>
-        </div>
-        <span class="channel-arrow">→</span>
-      </a>
+  <div class="page-head">
+    <div class="wrap page-head__inner">
+      <h1 class="h-display">Contact</h1>
+      <p class="lede">
+        Internships, research collaboration, or a security problem you want a
+        second pair of eyes on. Email is the fastest route.
+      </p>
     </div>
+  </div>
 
-    <div class="contact-form-panel">
-      <div class="hud-panel__label" style="font-family:var(--font-hud);font-size:0.5rem;font-weight:700;color:var(--accent);letter-spacing:0.2em;margin-bottom:1.5rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border);">// TRANSMIT MESSAGE</div>
-      <div class="hud-form">
-        <div class="hf-group">
-          <label class="hf-label">SENDER_ID</label>
-          <input class="hf-input" type="text" placeholder="your name"/>
+  <section class="section wrap">
+    <div class="contact-grid">
+
+      <div>
+        <h2 class="mono-label" style="margin-bottom:1.25rem">Direct</h2>
+        <div class="channels">
+
+          <a class="channel" href="mailto:harnoorhrishikesh@gmail.com">
+            <span class="channel__body">
+              <span class="channel__label">Email</span>
+              <span class="channel__val">harnoorhrishikesh@gmail.com</span>
+            </span>
+            <span class="channel__arrow" aria-hidden="true">&rarr;</span>
+          </a>
+
+          <a class="channel" href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" rel="noopener" target="_blank">
+            <span class="channel__body">
+              <span class="channel__label">LinkedIn</span>
+              <span class="channel__val">hrishikesh-harnoor</span>
+            </span>
+            <span class="channel__arrow" aria-hidden="true">&#8599;</span>
+          </a>
+
+          <a class="channel" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+            <span class="channel__body">
+              <span class="channel__label">GitHub</span>
+              <span class="channel__val">Hrishikesh122</span>
+            </span>
+            <span class="channel__arrow" aria-hidden="true">&#8599;</span>
+          </a>
+
         </div>
-        <div class="hf-group">
-          <label class="hf-label">RETURN_ADDRESS</label>
-          <input class="hf-input" type="email" placeholder="your@email.com"/>
+
+        <div class="panel" style="margin-top:2rem">
+          <h3 class="mono-label" style="margin-bottom:.9rem">Worth including</h3>
+          <p class="body-text" style="font-size:.92rem">
+            The role or team, a rough timeline, and what you would want me
+            working on. That is usually enough for me to give you a straight
+            answer either way.
+          </p>
         </div>
-        <div class="hf-group">
-          <label class="hf-label">MESSAGE_PAYLOAD</label>
-          <textarea class="hf-input hf-textarea" placeholder="Describe your transmission..."></textarea>
-        </div>
-        <button class="hud-btn hud-btn--full" onclick="handleSend(this)">TRANSMIT <span>→</span></button>
-        <p class="hf-note" id="hf-note"></p>
       </div>
+
+      <div>
+        <h2 class="mono-label" style="margin-bottom:1.25rem">Send a message</h2>
+
+        <!--
+          SETUP: create a form at https://formspree.io, copy the form ID from
+          the endpoint it gives you (https://formspree.io/f/XXXXXXXX) and put
+          that ID into FORM_ID at the top of ../js/contact.js.
+          Until that is set, this form opens a prefilled email instead of
+          submitting, and says so. It never fakes a successful send.
+        -->
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="cf-name">Your name</label>
+            <input type="text" id="cf-name" name="name" autocomplete="name" required>
+            <p class="field__error" id="cf-name-error" hidden>Please enter your name.</p>
+          </div>
+
+          <div class="field">
+            <label for="cf-email">Email address</label>
+            <input type="email" id="cf-email" name="email" autocomplete="email" required>
+            <p class="field__hint">So I can reply.</p>
+            <p class="field__error" id="cf-email-error" hidden>Please enter a valid email address.</p>
+          </div>
+
+          <div class="field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" name="message" required></textarea>
+            <p class="field__error" id="cf-message-error" hidden>Please write a message.</p>
+          </div>
+
+          <!-- honeypot, hidden from people, catches naive bots -->
+          <div class="sr-only" aria-hidden="true">
+            <label for="cf-company">Company</label>
+            <input type="text" id="cf-company" name="_gotcha" tabindex="-1" autocomplete="off">
+          </div>
+
+          <button class="btn btn--primary btn--full" type="submit" id="cf-submit">Send message</button>
+          <p class="form__status" id="cf-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
     </div>
+  </section>
 
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p class="footer__name">Hrishikesh Harnoor</p>
+    <div class="footer__links">
+      <a href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" rel="noopener" target="_blank">LinkedIn</a>
+      <a href="mailto:harnoorhrishikesh@gmail.com">Email</a>
+    </div>
   </div>
-</section>
-
-<footer class="hud-footer">
-  <span>HH.SYS // v2.0.25</span><span class="accent">▮</span><span>HRISHIKESH HARNOOR</span>
 </footer>
-<script src="../js/canvas.js"></script>
-<script src="../js/hud.js"></script>
-<script>
-function handleSend(btn) {
-  const note = document.getElementById('hf-note');
-  btn.textContent = 'TRANSMITTING...';
-  setTimeout(() => {
-    btn.innerHTML = 'TRANSMITTED ✓';
-    btn.style.color = 'var(--accent2)';
-    btn.style.borderColor = 'var(--accent2)';
-    note.textContent = '> MESSAGE QUEUED. RESPONSE WITHIN 24H.';
-    note.style.color = 'var(--accent2)';
-  }, 1200);
-}
-</script>
+
+<script src="../js/site.js" defer></script>
+<script src="../js/contact.js" defer></script>
 </body>
 </html>

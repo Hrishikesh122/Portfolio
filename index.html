@@ -1,185 +1,232 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HH // SYSTEM ONLINE</title>
-  <link rel="stylesheet" href="css/hud.css"/>
-  <link rel="stylesheet" href="css/glitch.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-</head>
-<body class="booting">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- BOOT SCREEN -->
-<div id="boot-screen">
-  <div class="boot-inner">
-    <div class="boot-logo">HH<span class="accent">_</span></div>
-    <div class="boot-bar"><div class="boot-bar__fill" id="boot-fill"></div></div>
-    <div class="boot-log" id="boot-log"></div>
+<title>Hrishikesh Harnoor - ML Systems and Security Engineer</title>
+<meta name="description" content="Hrishikesh Harnoor builds machine learning systems and studies how they break. Work in applied cryptography, offensive security, autonomous Kubernetes remediation and published intrusion-detection research.">
+<link rel="canonical" href="https://hrishikesh122.github.io/Portfolio/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hrishikesh122.github.io/Portfolio/">
+<meta property="og:title" content="Hrishikesh Harnoor - ML Systems and Security Engineer">
+<meta property="og:description" content="Machine learning systems, applied cryptography and offensive security. Published intrusion-detection research and an autonomous Kubernetes remediation platform.">
+<meta property="og:image" content="https://hrishikesh122.github.io/Portfolio/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Hrishikesh Harnoor - ML Systems and Security Engineer">
+<meta name="twitter:description" content="Machine learning systems, applied cryptography and offensive security.">
+<meta name="twitter:image" content="https://hrishikesh122.github.io/Portfolio/assets/og.png">
+
+<meta name="theme-color" content="#070b0e">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/core.css">
+<link rel="stylesheet" href="css/pages.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Person",
+  "name":"Hrishikesh Harnoor",
+  "url":"https://hrishikesh122.github.io/Portfolio/",
+  "image":"https://hrishikesh122.github.io/Portfolio/assets/photo.jpeg",
+  "jobTitle":"Machine Learning and Security Engineer",
+  "email":"mailto:harnoorhrishikesh@gmail.com",
+  "alumniOf":{"@type":"CollegeOrUniversity","name":"Amrita Vishwa Vidyapeetham, Amaravati"},
+  "knowsAbout":["Machine Learning","Applied Cryptography","Offensive Security","Intrusion Detection","Zero-Knowledge Proofs","Kubernetes"],
+  "sameAs":[
+    "https://github.com/Hrishikesh122",
+    "https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/"
+  ]
+}
+</script>
+</head>
+<body>
+
+<div id="boot">
+  <div class="boot__inner">
+    <p class="boot__mark">HH<span>_</span></p>
+    <div class="boot__track"><div class="boot__fill"></div></div>
+    <p class="boot__line">&gt; loading profile</p>
+    <button type="button" class="boot__skip">Skip</button>
   </div>
 </div>
 
-<!-- SCANLINE OVERLAY -->
-<div class="scanlines"></div>
-<div class="vignette"></div>
-<div class="noise"></div>
+<a class="skip-link" href="#main">Skip to content</a>
 
-<!-- NAV HUD -->
-<nav class="hud-nav" id="hud-nav">
-  <div class="hud-nav__left">
-    <span class="hud-nav__logo">HH<span class="accent">.</span>SYS</span>
-    <span class="hud-nav__status"><span class="pulse-dot"></span> ONLINE</span>
+<div class="scanlines" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="index.html">HH<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+        <li><a href="pages/skills.html">Skills</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span class="sr-only">Menu</span>
+      <span class="nav__toggle-bars" aria-hidden="true"><i></i></span>
+    </button>
   </div>
-  <ul class="hud-nav__links">
-    <li><a href="index.html" class="active"><span class="nav-num">00</span>HOME</a></li>
-    <li><a href="pages/about.html"><span class="nav-num">01</span>ABOUT</a></li>
-    <li><a href="pages/projects.html"><span class="nav-num">02</span>PROJECTS</a></li>
-    <li><a href="pages/skills.html"><span class="nav-num">03</span>SKILLS</a></li>
-    <li><a href="pages/contact.html"><span class="nav-num">04</span>CONTACT</a></li>
-  </ul>
-  <div class="hud-nav__right">
-    <span class="hud-clock" id="hud-clock">00:00:00</span>
-  </div>
-</nav>
+</header>
 
-<!-- MAIN HERO -->
-<section class="hero-hud">
-  <canvas id="hero-canvas"></canvas>
+<main id="main">
 
-  <!-- LEFT PANEL -->
-  <div class="hud-panel hud-panel--left fade-up fade-up-delay-1">
-    <div class="hud-corner hud-corner--tl"></div>
-    <div class="hud-panel__label">SYS // IDENTITY</div>
-    <div class="stat-row"><span class="stat-key">OPERATOR</span><span class="stat-val">HRISHIKESH HARNOOR</span></div>
-    <div class="stat-row"><span class="stat-key">ROLE</span><span class="stat-val">DESIGNER + DEV</span></div>
-    <div class="stat-row"><span class="stat-key">DOMAIN</span><span class="stat-val">QUANTUM / CYBER / EMBED</span></div>
-    <div class="stat-row"><span class="stat-key">STATUS</span><span class="stat-val accent">ACTIVE ▮</span></div>
-    <div class="stat-row"><span class="stat-key">THREAT LVL</span><span class="stat-val">CLASSIFIED</span></div>
-    <div class="hud-divider"></div>
-    <div class="hud-panel__label">COMMS // LINK</div>
-    <div class="stat-row"><a href="https://github.com/Hrishikesh122" target="_blank" class="stat-link">[ GITHUB ]</a></div>
-    <div class="stat-row"><a href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" target="_blank" class="stat-link">[ LINKEDIN ]</a></div>
-  </div>
+  <section class="hero">
+    <canvas id="field" aria-hidden="true"></canvas>
+    <div class="hero__inner">
 
-  <!-- CENTER -->
-  <div class="hero-center fade-up fade-up-delay-2">
-    <div class="hologram-wrap" id="hologram">
-      <div class="radar-ring radar-ring--1"></div>
-      <div class="radar-ring radar-ring--2"></div>
-      <div class="radar-ring radar-ring--3"></div>
-      <div class="radar-sweep"></div>
-
-      <div class="photo-container">
-        <div class="photo-frame">
-          <div class="photo-placeholder">
-            <img src="assets/photo.jpeg" alt="Hrishikesh Harnoor">
-            <div class="hologram-bars"></div>
-          </div>
-          <div class="scanline-over"></div>
-          <div class="glitch-slice s1"></div>
-          <div class="glitch-slice s2"></div>
-          <div class="duotone-overlay"></div>
+      <div class="hero__copy">
+        <p class="eyebrow rise" style="--i:0">Machine learning and security</p>
+        <h1 class="h-display hero__name rise" style="--i:1">
+          <span>Hrishikesh</span>
+          <span class="outline">Harnoor</span>
+        </h1>
+        <p class="lede rise" style="--i:2">
+          I build machine learning systems and study how they break. Applied
+          cryptography, offensive security, and published research.
+        </p>
+        <div class="hero__actions rise" style="--i:3">
+          <a class="btn btn--primary" href="pages/projects.html">View projects</a>
+          <a class="btn btn--ghost" href="pages/contact.html">Get in touch</a>
         </div>
       </div>
 
-      <div class="hud-ring-text">
-        <svg viewBox="0 0 300 300" class="ring-svg">
-          <defs>
-            <path id="circle-path" d="M 150,150 m -120,0 a 120,120 0 1,1 240,0 a 120,120 0 1,1 -240,0"/>
-          </defs>
-          <text class="ring-text-svg">
-            <textPath href="#circle-path">QUANTUM ◈ CYBERSECURITY ◈ EMBEDDED SYSTEMS ◈ AI ◈ </textPath>
-          </text>
-        </svg>
+      <div class="hero__visual rise" style="--i:2">
+        <div class="portrait">
+          <div class="portrait__ring" aria-hidden="true"></div>
+          <div class="portrait__frame">
+            <span class="portrait__corner portrait__corner--tl" aria-hidden="true"></span>
+            <span class="portrait__corner portrait__corner--br" aria-hidden="true"></span>
+            <img src="assets/photo.jpeg" alt="Hrishikesh Harnoor" width="380" height="380" fetchpriority="high">
+          </div>
+        </div>
       </div>
+
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section__head">
+      <h2 class="h-section">Selected work</h2>
+      <p class="body-text">
+        Three of the systems I have spent the most time on. The rest are on the
+        projects page.
+      </p>
     </div>
 
-    <div class="hero-title-wrap">
-      <p class="hero-eyebrow"><span class="accent">// </span>INITIALIZING PROFILE</p>
+    <div class="work-grid">
 
-      <!-- ✅ UPDATED -->
-      <h1 class="hero-title glitch-text glitch-hover" data-text="HRISHIKESH">HRISHIKESH</h1>
-      <h1 class="hero-title hero-title--outline glitch-text glitch-hover" data-text="HARNOOR">HARNOOR</h1>
+      <a class="work-card work-card--lead reveal" style="--i:0" href="pages/projects.html">
+        <span class="work-card__kind">Reliability engineering</span>
+        <h3 class="h-card">Aegis</h3>
+        <p>
+          A safety-gated platform that hardens Kubernetes clusters against failure
+          and remediates them without a human in the loop. A temporal convolutional
+          autoencoder flags anomalies and a causal graph neural network over the
+          service topology works out what actually caused them.
+        </p>
+        <p class="work-card__stack">Kubernetes / Terraform / PyTorch / canary CI-CD</p>
+        <span class="work-card__more">Read more <span aria-hidden="true">&rarr;</span></span>
+      </a>
 
-      <p class="hero-tagline typewriter" id="typewriter"></p>
+      <a class="work-card reveal" style="--i:1" href="pages/projects.html">
+        <span class="work-card__kind">Security research</span>
+        <h3 class="h-card">MemNetForensX</h3>
+        <p>
+          Trimodal malware detection that reads memory forensics, network traffic
+          and binary images together through three-way cross-modal attention, with
+          SHAP explanations for every verdict.
+        </p>
+        <p class="work-card__stack">PyTorch / SHAP / CIC-MalMem / CICIDS2017</p>
+        <span class="work-card__more">Read more <span aria-hidden="true">&rarr;</span></span>
+      </a>
+
+      <a class="work-card reveal" style="--i:2" href="pages/projects.html">
+        <span class="work-card__kind">Agent systems</span>
+        <h3 class="h-card">Pragya</h3>
+        <p>
+          A multi-agent voice assistant running a ReAct loop over 16 tools at about
+          938ms end to end, behind a 24-layer security architecture with
+          prompt-injection filtering and sandboxed code execution.
+        </p>
+        <p class="work-card__stack">Groq / ChromaDB / Resemblyzer / SQLite</p>
+        <span class="work-card__more">Read more <span aria-hidden="true">&rarr;</span></span>
+      </a>
+
+    </div>
+  </section>
+
+  <section class="section wrap">
+    <div class="section__head">
+      <h2 class="h-section">Research</h2>
+    </div>
+
+    <div class="pubs">
+      <article class="pub reveal" style="--i:0">
+        <span class="pub__venue">IEEE IECS 2026</span>
+        <h3 class="pub__title">
+          A Fully Unsupervised Temporal Convolutional Autoencoder for IoT Intrusion Detection
+        </h3>
+        <p class="pub__note">Accepted and presented at VIT Bhopal.</p>
+      </article>
+
+      <article class="pub reveal" style="--i:1">
+        <span class="pub__venue">Springer Nature</span>
+        <h3 class="pub__title">
+          Augmenting the Researcher: AI Automation Across the Academic Research Lifecycle
+        </h3>
+        <p class="pub__note">Review paper.</p>
+      </article>
+
+      <article class="pub reveal" style="--i:2">
+        <span class="pub__venue">In progress</span>
+        <h3 class="pub__title">
+          EEG deep learning, agent security evaluation and LLM reliability
+        </h3>
+        <p class="pub__note">Several papers currently being written up.</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band__inner">
+      <h2 class="h-section">Open to internships and research collaboration</h2>
+      <p>
+        I am most useful on problems that sit between machine learning and
+        security. If that sounds like your team, say hello.
+      </p>
+      <a class="btn btn--primary" href="pages/contact.html">Get in touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p class="footer__name">Hrishikesh Harnoor</p>
+    <div class="footer__links">
+      <a href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" rel="noopener" target="_blank">LinkedIn</a>
+      <a href="mailto:harnoorhrishikesh@gmail.com">Email</a>
     </div>
   </div>
-
-  <!-- RIGHT PANEL -->
-  <div class="hud-panel hud-panel--right fade-up fade-up-delay-3">
-    <div class="hud-corner hud-corner--tr"></div>
-    <div class="hud-panel__label">SYS // METRICS</div>
-    <!-- gauges unchanged -->
-  </div>
-
-  <!-- BOTTOM HUD BAR -->
-  <div class="hud-bottom">
-    <span class="hud-coord" id="coord-x">X: 0000</span>
-
-    <!-- ✅ UPDATED -->
-    <a href="pages/projects.html" class="hud-cta glitch-hover">
-      ENTER SYSTEM <span class="accent">→</span>
-    </a>
-
-    <span class="hud-coord" id="coord-y">Y: 0000</span>
-  </div>
-</section>
-
-<!-- FEATURED SECTION (unchanged) -->
-<section class="featured-section">
-  <div class="section-hud-header">
-    <div class="shh-line"></div>
-    <span class="shh-label">// FEATURED PROJECTS</span>
-    <div class="shh-line"></div>
-  </div>
-
-  <div class="feat-grid">
-    <a href="pages/projects.html" class="feat-card">
-      <div class="feat-card__num">01</div>
-      <div class="feat-card__glow"></div>
-      <div class="feat-card__top">
-        <span class="feat-tag">QUANTUM ML</span>
-        <span class="feat-arrow">↗</span>
-      </div>
-      <h3>QML Anomaly<br/>Detection</h3>
-      <p>Variational quantum circuits for network intrusion detection at the edge.</p>
-      <div class="feat-card__bar"></div>
-    </a>
-
-    <a href="pages/projects.html" class="feat-card">
-      <div class="feat-card__num">02</div>
-      <div class="feat-card__glow"></div>
-      <div class="feat-card__top">
-        <span class="feat-tag">EDGE AI</span>
-        <span class="feat-arrow">↗</span>
-      </div>
-      <h3>Digital Twin<br/>Edge Model</h3>
-      <p>Real-time IoT mirroring for predictive maintenance without cloud latency.</p>
-      <div class="feat-card__bar"></div>
-    </a>
-
-    <a href="pages/projects.html" class="feat-card">
-      <div class="feat-card__num">03</div>
-      <div class="feat-card__glow"></div>
-      <div class="feat-card__top">
-        <span class="feat-tag">AI ASSISTANT</span>
-        <span class="feat-arrow">↗</span>
-      </div>
-      <h3>Jarvis AI</h3>
-      <p>Voice-driven personal AI with NLP command parsing and task automation.</p>
-      <div class="feat-card__bar"></div>
-    </a>
-  </div>
-</section>
-
-<footer class="hud-footer">
-  <span>HH.SYS // v2.0.25</span>
-  <span class="accent">▮</span>
-  <span>HRISHIKESH HARNOOR</span>
 </footer>
 
-<script src="js/boot.js"></script>
-<script src="js/canvas.js"></script>
-<script src="js/hud.js"></script>
+<script src="js/site.js" defer></script>
+<script src="js/field.js" defer></script>
 </body>
 </html>

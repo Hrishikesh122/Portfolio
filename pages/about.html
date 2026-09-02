@@ -1,110 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HH // ABOUT</title>
-  <link rel="stylesheet" href="../css/hud.css"/>
-  <link rel="stylesheet" href="../css/glitch.css"/>
-  <link rel="stylesheet" href="../css/subpage.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>About - Hrishikesh Harnoor</title>
+<meta name="description" content="Hrishikesh Harnoor is a B.Tech Computer Science student at Amrita Vishwa Vidyapeetham, Amaravati, working on machine learning systems, applied cryptography and offensive security.">
+<link rel="canonical" href="https://hrishikesh122.github.io/Portfolio/pages/about.html">
+
+<meta property="og:type" content="profile">
+<meta property="og:url" content="https://hrishikesh122.github.io/Portfolio/pages/about.html">
+<meta property="og:title" content="About - Hrishikesh Harnoor">
+<meta property="og:description" content="B.Tech Computer Science student working on machine learning systems, applied cryptography and offensive security.">
+<meta property="og:image" content="https://hrishikesh122.github.io/Portfolio/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hrishikesh122.github.io/Portfolio/assets/og.png">
+
+<meta name="theme-color" content="#070b0e">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/core.css">
+<link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
-<div class="scanlines"></div><div class="vignette"></div><div class="noise"></div>
 
-<nav class="hud-nav">
-  <div class="hud-nav__left">
-    <a href="../index.html" class="hud-nav__logo">HH<span class="accent">.</span>SYS</a>
-    <span class="hud-nav__status"><span class="pulse-dot"></span> ONLINE</span>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="../index.html">HH<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span class="sr-only">Menu</span>
+      <span class="nav__toggle-bars" aria-hidden="true"><i></i></span>
+    </button>
   </div>
-  <ul class="hud-nav__links">
-    <li><a href="../index.html"><span class="nav-num">00</span>HOME</a></li>
-    <li><a href="about.html" class="active"><span class="nav-num">01</span>ABOUT</a></li>
-    <li><a href="projects.html"><span class="nav-num">02</span>PROJECTS</a></li>
-    <li><a href="skills.html"><span class="nav-num">03</span>SKILLS</a></li>
-    <li><a href="contact.html"><span class="nav-num">04</span>CONTACT</a></li>
-  </ul>
-  <div class="hud-nav__right"><span class="hud-clock" id="hud-clock">00:00:00</span></div>
-</nav>
+</header>
 
-<div class="subpage-hero">
-  <canvas id="hero-canvas"></canvas>
-  <div class="subpage-hero__content">
-    <p class="sub-eyebrow"><span class="accent">// </span>MODULE 01</p>
-    <h1 class="sub-title glitch-text" data-text="ABOUT">ABOUT</h1>
-    <p class="sub-desc">Operator file. Clearance level: public.</p>
-  </div>
-  <div class="subpage-hero__hud-bar">
-    <span>OPERATOR: HRISHIKESH_HARNOOR</span>
-    <span class="accent">◈</span>
-    <span>LOCATION: INDIA</span>
-    <span class="accent">◈</span>
-    <span>STATUS: ACTIVE</span>
-  </div>
-</div>
+<main id="main">
 
-<section class="subpage-content">
-  <div class="about-grid">
-    <div class="about-bio-panel">
-      <div class="hud-panel-sub">
-        <div class="hud-corner hud-corner--tl"></div>
-        <div class="hud-panel__label">// OPERATOR BIO</div>
-        <p class="about-text">
-          I'm Hrishikesh Harnoor — a designer and developer operating at the intersection of <span class="accent-text">quantum computing</span>, <span class="accent-text">cybersecurity</span>, and <span class="accent-text">embedded systems</span>.
-        </p>
-        <p class="about-text">
-          My work bridges the physical and digital: from writing firmware for microcontrollers to building quantum ML pipelines that run anomaly detection on edge hardware. I believe the future of computing isn't just in the cloud — it's in the silicon, the circuit, and the quantum state.
-        </p>
-        <p class="about-text">
-          When I'm not building things, I'm reverse engineering them to understand how they break.
-        </p>
-      </div>
-    </div>
-
-    <div class="about-timeline-panel">
-      <div class="hud-panel__label" style="font-family:var(--font-hud);font-size:0.5rem;font-weight:700;color:var(--accent);letter-spacing:0.2em;margin-bottom:1.5rem;">// TIMELINE</div>
-      <div class="hud-timeline">
-        <div class="ht-item">
-          <div class="ht-dot"></div>
-          <div class="ht-content">
-            <span class="ht-date">2023 — PRESENT</span>
-            <h4>B.Tech —  Computer Science and Engineering</h4>
-            <p>Active research in QML, embedded systems, and network security. CTF participation.</p>
-          </div>
-        </div>
-        <div class="ht-item">
-          <div class="ht-dot"></div>
-          <div class="ht-content">
-            <span class="ht-date">2025</span>
-            <h4>QML Anomaly Detection</h4>
-            <p>Built variational quantum circuit models for edge-based network intrusion detection.</p>
-          </div>
-        </div>
-        <div class="ht-item">
-          <div class="ht-dot"></div>
-          <div class="ht-content">
-            <span class="ht-date">2025</span>
-            <h4>Digital Twin + Enhanced Edge</h4>
-            <p> real-time digital twin mirroring with edge - cloud simulation.</p>
-          </div>
-        </div>
-        <div class="ht-item">
-          <div class="ht-dot"></div>
-          <div class="ht-content">
-            <span class="ht-date">2025</span>
-            <h4>Jarvis AI Assistant</h4>
-            <p>Voice-controlled AI with NLP task automation running fully offline.</p>
-          </div>
-        </div>
-      </div>
+  <div class="page-head">
+    <div class="wrap page-head__inner">
+      <h1 class="h-display">About</h1>
+      <p class="lede">
+        Computer science student, currently splitting my time between machine
+        learning research and security work.
+      </p>
     </div>
   </div>
-</section>
 
-<footer class="hud-footer">
-  <span>HH.SYS // v2.0.25</span><span class="accent">▮</span><span>HRISHIKESH HARNOOR</span>
+  <section class="section wrap">
+    <div class="about-grid">
+
+      <div>
+        <p class="body-text">
+          I am Hrishikesh Harnoor, a B.Tech Computer Science student at Amrita
+          Vishwa Vidyapeetham, Amaravati. Most of what I do falls into two
+          buckets that keep turning out to be the same bucket: building machine
+          learning systems, and understanding how systems fail under an
+          adversary.
+        </p>
+        <p class="body-text">
+          On the research side that has meant unsupervised intrusion detection
+          for IoT networks, published at IEEE IECS 2026, and multimodal malware
+          detection that reasons across memory forensics, network traffic and
+          binary imagery at once. On the security side it has meant writing RSA
+          attack tooling, implementing a hybrid post-quantum key exchange with a
+          working downgrade attack against it, and generating real Groth16
+          zero-knowledge proofs rather than mocking them.
+        </p>
+        <p class="body-text">
+          I like problems where a wrong answer is expensive and the failure mode
+          is not obvious. If you are working on something in that shape, I would
+          like to hear about it.
+        </p>
+
+        <dl class="facts">
+          <div class="fact"><dt>Program</dt><dd>B.Tech, Computer Science and Engineering</dd></div>
+          <div class="fact"><dt>Institution</dt><dd>Amrita Vishwa Vidyapeetham, Amaravati</dd></div>
+          <div class="fact"><dt>Graduating</dt><dd>2027</dd></div>
+          <div class="fact"><dt>CGPA</dt><dd>8.89</dd></div>
+          <div class="fact"><dt>Based in</dt><dd>Hyderabad, India</dd></div>
+          <div class="fact"><dt>Focus</dt><dd>ML systems, applied cryptography, offensive security</dd></div>
+        </dl>
+      </div>
+
+      <div>
+        <h2 class="mono-label" style="margin-bottom:1.5rem">Timeline</h2>
+        <div class="timeline">
+
+          <div class="tl-item reveal" style="--i:0">
+            <span class="tl-date">2023 to present</span>
+            <h3>B.Tech, Computer Science and Engineering</h3>
+            <p>Amrita Vishwa Vidyapeetham, Amaravati. Research alongside coursework.</p>
+          </div>
+
+          <div class="tl-item reveal" style="--i:1">
+            <span class="tl-date">2026</span>
+            <h3>IEEE IECS 2026, accepted</h3>
+            <p>Unsupervised temporal convolutional autoencoder for IoT intrusion detection. Presented at VIT Bhopal.</p>
+          </div>
+
+          <div class="tl-item reveal" style="--i:2">
+            <span class="tl-date">2026</span>
+            <h3>Post-quantum key exchange</h3>
+            <p>Hybrid X25519 with ML-KEM-768, plus a proof of concept downgrade attack against it.</p>
+          </div>
+
+          <div class="tl-item reveal" style="--i:3">
+            <span class="tl-date">Ongoing</span>
+            <h3>Aegis and MemNetForensX</h3>
+            <p>Autonomous Kubernetes remediation, and trimodal malware detection with a paper in preparation.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band__inner">
+      <h2 class="h-section">Want the detail?</h2>
+      <p>Every project has a write-up, and the code is on GitHub.</p>
+      <a class="btn btn--primary" href="projects.html">View projects</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p class="footer__name">Hrishikesh Harnoor</p>
+    <div class="footer__links">
+      <a href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" rel="noopener" target="_blank">LinkedIn</a>
+      <a href="mailto:harnoorhrishikesh@gmail.com">Email</a>
+    </div>
+  </div>
 </footer>
-<script src="../js/canvas.js"></script>
-<script src="../js/hud.js"></script>
+
+<script src="../js/site.js" defer></script>
 </body>
 </html>

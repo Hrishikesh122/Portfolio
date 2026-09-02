@@ -1,118 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>HH // PROJECTS</title>
-  <link rel="stylesheet" href="../css/hud.css"/>
-  <link rel="stylesheet" href="../css/glitch.css"/>
-  <link rel="stylesheet" href="../css/subpage.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Projects - Hrishikesh Harnoor</title>
+<meta name="description" content="Projects by Hrishikesh Harnoor: autonomous Kubernetes remediation, trimodal malware detection, multi-agent voice assistants, zero-knowledge proof benchmarking and RSA attack tooling.">
+<link rel="canonical" href="https://hrishikesh122.github.io/Portfolio/pages/projects.html">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://hrishikesh122.github.io/Portfolio/pages/projects.html">
+<meta property="og:title" content="Projects - Hrishikesh Harnoor">
+<meta property="og:description" content="Autonomous Kubernetes remediation, trimodal malware detection, agent systems, zero-knowledge proofs and RSA attack tooling.">
+<meta property="og:image" content="https://hrishikesh122.github.io/Portfolio/assets/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://hrishikesh122.github.io/Portfolio/assets/og.png">
+
+<meta name="theme-color" content="#070b0e">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="../css/core.css">
+<link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
-<div class="scanlines"></div>
-<div class="vignette"></div>
-<div class="noise"></div>
 
-<nav class="hud-nav" id="hud-nav">
-  <div class="hud-nav__left">
-    <a href="../index.html" class="hud-nav__logo">HH<span class="accent">.</span>SYS</a>
-    <span class="hud-nav__status"><span class="pulse-dot"></span> ONLINE</span>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<div class="scanlines" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="nav__inner">
+    <a class="nav__brand" href="../index.html">HH<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav__links" id="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links">
+      <span class="sr-only">Menu</span>
+      <span class="nav__toggle-bars" aria-hidden="true"><i></i></span>
+    </button>
   </div>
-  <ul class="hud-nav__links">
-    <li><a href="../index.html"><span class="nav-num">00</span>HOME</a></li>
-    <li><a href="about.html"><span class="nav-num">01</span>ABOUT</a></li>
-    <li><a href="projects.html" class="active"><span class="nav-num">02</span>PROJECTS</a></li>
-    <li><a href="skills.html"><span class="nav-num">03</span>SKILLS</a></li>
-    <li><a href="contact.html"><span class="nav-num">04</span>CONTACT</a></li>
-  </ul>
-  <div class="hud-nav__right"><span class="hud-clock" id="hud-clock">00:00:00</span></div>
-</nav>
+</header>
 
-<div class="subpage-hero">
-  <canvas id="hero-canvas"></canvas>
-  <div class="subpage-hero__content">
-    <p class="sub-eyebrow"><span class="accent">// </span>MODULE 02</p>
-    <h1 class="sub-title glitch-text" data-text="PROJECTS">PROJECTS</h1>
-    <p class="sub-desc">Classified operations. Select a file to access.</p>
-  </div>
-  <div class="subpage-hero__hud-bar">
-    <span>TOTAL_FILES: 03</span>
-    <span class="accent">◈</span>
-    <span>STATUS: ACTIVE</span>
-    <span class="accent">◈</span>
-    <span>CLEARANCE: GRANTED</span>
-  </div>
-</div>
+<main id="main">
 
-<section class="subpage-content">
-  <div class="proj-list">
-
-    <div class="proj-file">
-      <div class="proj-file__header">
-        <div class="proj-file__id">FILE_01 // QML_ANOMALY</div>
-        <span class="proj-file__status status--active">ACTIVE</span>
-      </div>
-      <div class="proj-file__body">
-        <h2>QML Anomaly Detection</h2>
-        <p>Quantum Machine Learning pipeline leveraging variational quantum circuits (VQC) for anomaly detection in network traffic. Integrates Qiskit-based quantum preprocessing with classical ML for edge-deployable intrusion detection systems.</p>
-        <div class="proj-meta-grid">
-          <div class="pmeta"><span class="pmeta-k">STACK</span><span class="pmeta-v">Qiskit · Python · Scikit-learn · NumPy</span></div>
-          <div class="pmeta"><span class="pmeta-k">DOMAIN</span><span class="pmeta-v">Quantum ML · Cybersecurity</span></div>
-          <div class="pmeta"><span class="pmeta-k">STATUS</span><span class="pmeta-v accent">In Development</span></div>
-        </div>
-        <div class="proj-file__actions">
-          <a href="https://github.com/Hrishikesh122" target="_blank" class="hud-btn">GITHUB <span>↗</span></a>
-        </div>
-      </div>
+  <div class="page-head">
+    <div class="wrap page-head__inner">
+      <h1 class="h-display">Projects</h1>
+      <p class="lede">
+        Systems I have built, roughly in the order I would want to talk about
+        them in an interview.
+      </p>
     </div>
-
-    <div class="proj-file">
-      <div class="proj-file__header">
-        <div class="proj-file__id">FILE_02 // DIGITAL_TWIN</div>
-        <span class="proj-file__status status--active">ACTIVE</span>
-      </div>
-      <div class="proj-file__body">
-        <h2>Digital Twin-Enhanced Edge Model</h2>
-        <p>Real-time digital twin framework that mirrors physical IoT infrastructure for predictive maintenance. Runs inference at the edge via ESP32 + FreeRTOS without cloud round-trips, enabling sub-10ms anomaly response.</p>
-        <div class="proj-meta-grid">
-          <div class="pmeta"><span class="pmeta-k">STACK</span><span class="pmeta-v"> Python</span></div>
-          <div class="pmeta"><span class="pmeta-k">DOMAIN</span><span class="pmeta-v">Edge AI</span></div>
-          <div class="pmeta"><span class="pmeta-k">STATUS</span><span class="pmeta-v accent">Prototype</span></div>
-        </div>
-        <div class="proj-file__actions">
-          <a href="https://github.com/Hrishikesh122" target="_blank" class="hud-btn">GITHUB <span>↗</span></a>
-        </div>
-      </div>
-    </div>
-
-    <div class="proj-file">
-      <div class="proj-file__header">
-        <div class="proj-file__id">FILE_03 // JARVIS_AI</div>
-        <span class="proj-file__status status--online">ONLINE</span>
-      </div>
-      <div class="proj-file__body">
-        <h2>Jarvis AI</h2>
-        <p>A voice-driven personal AI assistant with natural language command parsing, task automation, and system control. Inspired by ambient intelligent systems — designed to run locally with offline NLP support.</p>
-        <div class="proj-meta-grid">
-          <div class="pmeta"><span class="pmeta-k">STACK</span><span class="pmeta-v">Python · SpeechRecognition · pyttsx3 · NLP</span></div>
-          <div class="pmeta"><span class="pmeta-k">DOMAIN</span><span class="pmeta-v">AI · Voice · Automation</span></div>
-          <div class="pmeta"><span class="pmeta-k">STATUS</span><span class="pmeta-v accent">Operational</span></div>
-        </div>
-        <div class="proj-file__actions">
-          <a href="https://github.com/Hrishikesh122" target="_blank" class="hud-btn">GITHUB <span>↗</span></a>
-        </div>
-      </div>
-    </div>
-
   </div>
-</section>
 
-<footer class="hud-footer">
-  <span>HH.SYS // v2.0.25</span><span class="accent">▮</span><span>HRISHIKESH HARNOOR</span>
+  <section class="section wrap">
+    <div class="proj-grid">
+
+      <!--
+        NOTE: every "View code" link below currently points at the GitHub
+        profile. Replace each href with the individual repository URL as the
+        repos go public.
+      -->
+
+      <article class="proj reveal" style="--i:0">
+        <div class="proj__top">
+          <span class="proj__kind">Reliability</span>
+          <span class="proj__state">In development</span>
+        </div>
+        <h2 class="h-card">Aegis</h2>
+        <p>
+          Proactive chaos-hardening and safety-gated autonomous remediation for
+          Kubernetes. A temporal convolutional autoencoder detects anomalies, a
+          causal graph neural network over the service topology attributes them
+          to a root cause, and remediation runs behind explicit safety gates.
+          Provisioned with Terraform and shipped through canary CI-CD.
+        </p>
+        <div class="chips">
+          <span class="chip">Kubernetes</span><span class="chip">PyTorch</span>
+          <span class="chip">Terraform</span><span class="chip">GNN</span>
+          <span class="chip">Chaos engineering</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="proj reveal" style="--i:1">
+        <div class="proj__top">
+          <span class="proj__kind">Security research</span>
+          <span class="proj__state">In preparation</span>
+        </div>
+        <h2 class="h-card">MemNetForensX</h2>
+        <p>
+          Trimodal malware detection combining memory forensics, network traffic
+          and binary image modalities through three-way cross-modal attention,
+          with SHAP explanations attached to every classification. Trained across
+          CIC-MalMem-2022, CICIDS2017 and Malimg.
+        </p>
+        <div class="chips">
+          <span class="chip">PyTorch</span><span class="chip">Cross-modal attention</span>
+          <span class="chip">SHAP</span><span class="chip">Memory forensics</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="proj reveal" style="--i:2">
+        <div class="proj__top">
+          <span class="proj__kind">Agent systems</span>
+          <span class="proj__state">Operational</span>
+        </div>
+        <h2 class="h-card">Pragya</h2>
+        <p>
+          Multi-agent voice assistant running a ReAct loop over 16 tools at
+          roughly 938ms end to end. ChromaDB retrieval with prompt-injection
+          filtering, Resemblyzer voice biometrics, AST-sandboxed code execution,
+          Fernet-encrypted storage and HMAC token auth across a 24-layer security
+          architecture.
+        </p>
+        <div class="chips">
+          <span class="chip">Groq</span><span class="chip">ChromaDB</span>
+          <span class="chip">ReAct</span><span class="chip">Resemblyzer</span>
+          <span class="chip">RAG</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="proj reveal" style="--i:3">
+        <div class="proj__top">
+          <span class="proj__kind">Applied cryptography</span>
+          <span class="proj__state">Public</span>
+        </div>
+        <h2 class="h-card">zk-credag</h2>
+        <p>
+          Real Groth16 zero-knowledge proofs generated with circom and snarkjs on
+          the BN128 curve, with benchmarks comparing Groth16, PLONK and FFLONK on
+          proving time, verification cost and proof size. Started as a mock and
+          was rebuilt on actual cryptography.
+        </p>
+        <div class="chips">
+          <span class="chip">circom</span><span class="chip">snarkjs</span>
+          <span class="chip">Groth16</span><span class="chip">PLONK</span>
+          <span class="chip">BN128</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="proj reveal" style="--i:4">
+        <div class="proj__top">
+          <span class="proj__kind">Offensive security</span>
+          <span class="proj__state">Public</span>
+        </div>
+        <h2 class="h-card">crypto-ctf-toolkit</h2>
+        <p>
+          Attack tooling for CTF cryptography. Implements Wiener's attack, common
+          modulus, small public exponent and Hastad's broadcast attack against
+          RSA, plus exploits for the usual classical ciphers.
+        </p>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">RSA</span>
+          <span class="chip">Lattice methods</span><span class="chip">CTF</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="proj reveal" style="--i:5">
+        <div class="proj__top">
+          <span class="proj__kind">Applied cryptography</span>
+          <span class="proj__state">Complete</span>
+        </div>
+        <h2 class="h-card">Hybrid post-quantum key exchange</h2>
+        <p>
+          X25519 combined with ML-KEM-768 in a hybrid handshake, built alongside a
+          working proof of concept downgrade attack that strips the post-quantum
+          half. The attack is the interesting part.
+        </p>
+        <div class="chips">
+          <span class="chip">ML-KEM-768</span><span class="chip">X25519</span>
+          <span class="chip">Protocol analysis</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="proj reveal" style="--i:6">
+        <div class="proj__top">
+          <span class="proj__kind">AI assistant</span>
+          <span class="proj__state">Operational</span>
+        </div>
+        <h2 class="h-card">JARVIS</h2>
+        <p>
+          Desktop AI assistant for Windows with a voice pipeline, a tools
+          executor and an Electron heads-up display. Backed by the Gemini API.
+        </p>
+        <div class="chips">
+          <span class="chip">Python</span><span class="chip">Electron</span>
+          <span class="chip">Gemini API</span><span class="chip">Speech</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="proj reveal" style="--i:7">
+        <div class="proj__top">
+          <span class="proj__kind">Blockchain</span>
+          <span class="proj__state">Hackathon</span>
+        </div>
+        <h2 class="h-card">Glassbox</h2>
+        <p>
+          On-chain accountability for AI agents. Agent decisions are committed to
+          the Polygon Amoy testnet so that an action taken autonomously can be
+          audited after the fact.
+        </p>
+        <div class="chips">
+          <span class="chip">Solidity</span><span class="chip">Polygon Amoy</span>
+          <span class="chip">AI agents</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+      <article class="proj reveal" style="--i:8">
+        <div class="proj__top">
+          <span class="proj__kind">ML tooling</span>
+          <span class="proj__state">Prototype</span>
+        </div>
+        <h2 class="h-card">Story point estimator</h2>
+        <p>
+          Effort estimation for engineering tickets, trained on NEODATASET and
+          served through a FastAPI backend with a React front end.
+        </p>
+        <div class="chips">
+          <span class="chip">FastAPI</span><span class="chip">React</span>
+          <span class="chip">NLP</span>
+        </div>
+        <a class="proj__link" href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">
+          View code <span aria-hidden="true">&#8599;</span>
+        </a>
+      </article>
+
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap band__inner">
+      <h2 class="h-section">Something here worth a conversation?</h2>
+      <p>Happy to walk through the design decisions on any of these.</p>
+      <a class="btn btn--primary" href="contact.html">Get in touch</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <p class="footer__name">Hrishikesh Harnoor</p>
+    <div class="footer__links">
+      <a href="https://github.com/Hrishikesh122" rel="noopener" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/hrishikesh-harnoor-7a07b22a3/" rel="noopener" target="_blank">LinkedIn</a>
+      <a href="mailto:harnoorhrishikesh@gmail.com">Email</a>
+    </div>
+  </div>
 </footer>
 
-<script src="../js/canvas.js"></script>
-<script src="../js/hud.js"></script>
+<script src="../js/site.js" defer></script>
 </body>
 </html>
